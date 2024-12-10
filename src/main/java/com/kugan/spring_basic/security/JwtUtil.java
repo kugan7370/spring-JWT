@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @Component
 public class JwtUtil {
 //    secret key
-    private static final SecretKey secretKey = Keys.secretKeyFor(SignatureAlgorithm.ES512);
+    private static final SecretKey secretKey = Keys.secretKeyFor(SignatureAlgorithm.HS512);
 
 //    expiration time
     private final int jwtExpirationMs= 86400000;
